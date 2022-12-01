@@ -23,6 +23,7 @@ def dump_metadata_into_schema_yaml(
         if Path(schema_yaml_path).exists()
         else {"version": 2, "models": []}
     )
+
     if schema is None:
         schema = {"version": 2, "models": []}
 
@@ -33,7 +34,8 @@ def dump_metadata_into_schema_yaml(
 
     ruamel = load_ruamel()
     ruamel.dump(
-        schema, open(Path(schema_yaml_path), "w", encoding="utf-8"),
+        schema,
+        open(Path(schema_yaml_path), "w", encoding="utf-8"),
     )
 
 

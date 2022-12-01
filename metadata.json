@@ -1,6 +1,6 @@
 {
     "example": {
-        "my_second_dbt_model": {
+        "my_first_dbt_model": {
             "title": "example: example",
             "short_description": "example",
             "long_description": "example",
@@ -18,7 +18,7 @@
                 }
             ]
         },
-        "my_first_dbt_model": {
+        "my_second_dbt_model": {
             "title": "example: example",
             "short_description": "example",
             "long_description": "example",
@@ -33,6 +33,98 @@
                 {
                     "name": "id",
                     "description": "The primary key for this table"
+                }
+            ]
+        }
+    },
+    "conservacao_ambiental_monitor_verde": {
+        "alertas_desmatamento": {
+            "title": "Dados do Monitor Verde: Alertas de Desmatamento do Monitor Verde",
+            "short_description": "Alertas de Desmatamento do Monitor Verde",
+            "long_description": "Alertas de Desmatamento do Monitor Verde",
+            "update_frequency": "Nunca",
+            "temporal_coverage": "Não Informado",
+            "data_owner": "Não Informado",
+            "publisher_name": "Não Informado",
+            "publisher_email": "user@gmail.com",
+            "tags": [
+                "alertas_desmatamento",
+                "conservacao_ambiental_monitor_verde",
+                "seop"
+            ],
+            "categories": [],
+            "columns": [
+                {
+                    "name": "id_global",
+                    "description": "identificacao unica para cada entrada"
+                },
+                {
+                    "name": "id_boletim",
+                    "description": "ID do boletim"
+                },
+                {
+                    "name": "periodo_boletim",
+                    "description": "Periodo de cobertura do boletim"
+                },
+                {
+                    "name": "periodo",
+                    "description": "Periodo"
+                },
+                {
+                    "name": "nome_regiao_administrativa",
+                    "description": "Nome região adm"
+                },
+                {
+                    "name": "id_regiao_administrativa",
+                    "description": "ID região adm"
+                },
+                {
+                    "name": "id_area_planejamento",
+                    "description": "ID area adm"
+                },
+                {
+                    "name": "nome_bairro",
+                    "description": "Nome do bairro"
+                },
+                {
+                    "name": "id_bairro",
+                    "description": "ID do bairro"
+                },
+                {
+                    "name": "acesso_local",
+                    "description": "Acesso local"
+                },
+                {
+                    "name": "tipo_local",
+                    "description": "Tipo do local"
+                },
+                {
+                    "name": "observacao",
+                    "description": "Observação"
+                },
+                {
+                    "name": "nome_unidade_conservacao",
+                    "description": "Nome da unidade de conservação"
+                },
+                {
+                    "name": "area",
+                    "description": "Area do poligono"
+                },
+                {
+                    "name": "latitude",
+                    "description": "Latitude"
+                },
+                {
+                    "name": "longitude",
+                    "description": "Longitude"
+                },
+                {
+                    "name": "geometria_wkt",
+                    "description": "Geometria original"
+                },
+                {
+                    "name": "geometria",
+                    "description": "Geometria"
                 }
             ]
         }
