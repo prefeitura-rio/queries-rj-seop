@@ -41,3 +41,8 @@ models:
     conservacao_ambiental_monitor_verde:
       +materialized: table 
       +schema: conservacao_ambiental_monitor_verde 
+    conservacao_ambiental_licenciamento_geosislic:
+      +materialized: table 
+      +schema: conservacao_ambiental_licenciamento_geosislic 
+
+      
