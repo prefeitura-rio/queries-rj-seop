@@ -27,4 +27,4 @@ WHERE subtipo IN (
   )
 
 AND categoria IN ('Serviço')
-AND numero_logradouro IS NOT NULL;
+AND numero_logradouro IS NOT NULL
