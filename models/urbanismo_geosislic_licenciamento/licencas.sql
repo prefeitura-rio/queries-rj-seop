@@ -80,5 +80,5 @@ SELECT
     SAFE_CAST(tot_vagasdescobertas AS INT64) total_vagas_descobertas, 
     SAFE_CAST(id AS STRING) id,    
     ST_GEOGPOINT(SAFE_CAST(longitude AS FLOAT64), SAFE_CAST(latitude AS FLOAT64)) AS geometry 
-FROM `rj-seop.urbanismo_geosislic_licenciamento.licencas`
+FROM `rj-seop.urbanismo_geosislic_licenciamento_staging.licencas`
 
