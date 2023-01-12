@@ -44,5 +44,6 @@ models:
     urbanismo_geosislic_licenciamento:
       +materialized: table 
       +schema: urbanismo_geosislic_licenciamento 
-
-      
+    dashboard_construcoes_irregulares:
+      +materialized: table 
+      +schema: dashboard_construcoes_irregulares 

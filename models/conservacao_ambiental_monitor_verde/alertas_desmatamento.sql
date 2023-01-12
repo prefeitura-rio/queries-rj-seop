@@ -16,5 +16,5 @@ SELECT
     SAFE_CAST(latitude AS FLOAT64) latitude,
     SAFE_CAST(longitude AS FLOAT64) longitude,
     SAFE_CAST(geometry AS STRING) geometria_wkt, 
-    ST_GEOGFROMTEXT(geometry) geometria 
+    SAFE.ST_GEOGFROMTEXT(geometry) AS geometry, 
 FROM rj-seop.conservacao_ambiental_monitor_verde_staging.alertas_desmatamento
