@@ -1,10 +1,20 @@
 
 SELECT 
-id_chamado, data_inicio, data_fim, 
-id_logradouro, numero_logradouro, longitude, latitude,
-nome_unidade_organizacional, id_unidade_organizacional_mae,
-tipo, subtipo, 
-status, situacao, tipo_situacao, dentro_prazo,
+id_chamado, 
+data_inicio, 
+data_fim, 
+id_logradouro, 
+numero_logradouro, 
+longitude, 
+latitude,
+nome_unidade_org, 
+id_unidade_org_mae,
+tipo, 
+subtipo, 
+status, 
+situacao, 
+tipo_situacao, 
+dentro_prazo,
 ST_GEOGPOINT(longitude, latitude) AS geometry 
 
 FROM `datario.administracao_servicos_publicos.chamado_1746`
