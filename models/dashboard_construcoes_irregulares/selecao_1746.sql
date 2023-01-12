@@ -1,20 +1,19 @@
 
 SELECT 
 	id_chamado, 
-	data_inicio, 
+	data_inicio as data_inici, 
 	data_fim, 
-	id_logradouro, 
-	numero_logradouro, 
-	longitude, 
-	latitude,
-	nome_unidade_organizacional, 
-	id_unidade_organizacional_mae,
+	id_logradouro as logradouro, 
+	numero_logradouro as numero_porta, 
+
+	nome_unidade_organizacional as orgao, 
+	id_unidade_organizacional_mae as orgao_mae,
 	tipo, 
 	subtipo, 
 	status, 
 	situacao, 
-	tipo_situacao, 
-	dentro_prazo,
+	tipo_situacao as tipo_situa, 
+	dentro_prazo as dentro_pra,
 	geometry 
 FROM `datario.administracao_servicos_publicos.chamado_1746`
 WHERE subtipo IN (	
