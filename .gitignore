@@ -5,3 +5,5 @@ logs/
 .replit
 replit.nix
 venv/
+.env
+credentials/
